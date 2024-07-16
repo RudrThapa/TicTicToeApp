@@ -64,8 +64,6 @@ public class WinnerPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(WinnerPage.this, MainActivity.class);
                 startActivity(i);
-                clap.release();
-                lose.release();
                 finish();
             }
         });
