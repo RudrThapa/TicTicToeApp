@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player 1 is X  and Player 2 is O"
+        android:fontFamily="@font/bangers"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/sageGreen"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@color/blue">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:background="@drawable/tttbox"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/soBlue"
+            android:onClick="Check"
+            android:fontFamily="@font/bangers"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/tttbox"
+            android:backgroundTint="@color/soBlue"
+            android:textSize="20sp"
+            android:fontFamily="@font/bangers"
+            android:onClick="Check"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            android:background="@drawable/tttbox"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/soBlue"
+            android:textSize="20sp"
+            android:fontFamily="@font/bangers"
+            android:onClick="Check"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/tttbox"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn4"
+            android:backgroundTint="@color/soBlue"
+            android:textSize="20sp"
+            android:fontFamily="@font/bangers"
+            android:onClick="Check"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            android:background="@drawable/tttbox"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/soBlue"
+            android:textSize="20sp"
+            android:fontFamily="@font/bangers"
+            android:onClick="Check"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            android:background="@drawable/tttbox"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/soBlue"
+            android:textSize="20sp"
+            android:fontFamily="@font/bangers"
+            android:onClick="Check"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/tttbox"
+            android:id="@+id/btn7"
+            android:backgroundTint="@color/soBlue"
+            android:textSize="20sp"
+            android:fontFamily="@font/bangers"
+            android:onClick="Check"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            android:background="@drawable/tttbox"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/soBlue"
+            android:fontFamily="@font/bangers"
+            android:textSize="20sp"
+            android:onClick="Check"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            android:background="@drawable/tttbox"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/soBlue"
+            android:fontFamily="@font/bangers"
+            android:textSize="20sp"
+            android:onClick="Check"
+            />
+
+    </GridLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:layout_marginTop="60dp">
+
+       <TextView
+           android:id="@+id/resetbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Reset"
+           android:fontFamily="@font/bangers"
+           android:textSize="25sp"
+           android:textColor="@color/green"
+           android:paddingEnd="20dp"
+           android:shadowColor = "#000"
+           android:shadowDx = "-2"
+           android:shadowDy = "-2"
+           android:shadowRadius = "1"
+           />
+
+       <TextView
+           android:id="@+id/exitbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/bangers"
+           android:text="Exit"
+           android:textColor="@color/red"
+           android:textSize="25sp"
+           android:layout_marginStart="60dp"
+           android:shadowColor = "#000"
+           android:shadowDx = "-2"
+           android:shadowDy = "-2"
+           android:shadowRadius = "1"
+           />
+
+   </LinearLayout>
+
+</LinearLayout>

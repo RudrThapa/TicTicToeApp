@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WinnerPage">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieWinner"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/winnercelebration"
+        android:scaleY="2"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/txtWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/bangers"
+        android:textColor="@color/darkBlue"
+        android:textSize="50sp"
+        android:text=""
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Play Again"
+        android:textColor="@color/sageGreen"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/bangers"
+        />
+
+</RelativeLayout>
