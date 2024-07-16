@@ -110,42 +110,50 @@ public class MainActivity extends AppCompatActivity {
                 } else if (b4.equals(b5) && b5.equals(b6) && !b4.isEmpty()) {
 //                    Toast.makeText(this, "Winner is: " + b4, Toast.LENGTH_SHORT).show();
                     winnerPage(b4);
+                    finish();
                     newGame();
 
                 } else if (b7.equals(b8) && b8.equals(b9) && !b7.isEmpty()) {
 //                    Toast.makeText(this, "Winner is: " + b7, Toast.LENGTH_SHORT).show();
                     winnerPage(b7);
+                    finish();
                     newGame();
 
                 } else if (b1.equals(b4) && b4.equals(b7) && !b1.isEmpty()) {
 //                    Toast.makeText(this, "Winner is: " + b1, Toast.LENGTH_SHORT).show();
                     winnerPage(b1);
+                    finish();
                     newGame();
 
                 } else if (b2.equals(b5) && b5.equals(b8) && !b2.isEmpty()) {
 //                    Toast.makeText(this, "Winner is: " + b2, Toast.LENGTH_SHORT).show();
                     winnerPage(b2);
+                    finish();
                     newGame();
 
                 } else if (b3.equals(b6) && b6.equals(b9) && !b3.isEmpty()) {
 //                    Toast.makeText(this, "Winner is: " + b3, Toast.LENGTH_SHORT).show();
                     winnerPage(b3);
+                    finish();
                     newGame();
 
                 } else if (b1.equals(b5) && b5.equals(b9) && !b1.isEmpty()) {
 //                    Toast.makeText(this, "Winner is: " + b1, Toast.LENGTH_SHORT).show();
                     winnerPage(b1);
+                    finish();
                     newGame();
 
                 } else if (b3.equals(b5) && b5.equals(b7) && !b3.isEmpty()) {
 //                    Toast.makeText(this, "Winner is: " + b3, Toast.LENGTH_SHORT).show();
                     winnerPage(b3);
+                    finish();
                     newGame();
 
                 } else if(!b1.isEmpty() && !b2.isEmpty() && !b3.isEmpty() &&
                         !b4.isEmpty() && !b5.isEmpty() && !b6.isEmpty() &&
                         !b7.isEmpty() && !b8.isEmpty() && !b9.isEmpty()){
                     winnerPage("-1");
+                    finish();
                     newGame();
                 }
 
